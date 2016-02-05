@@ -10,6 +10,8 @@ The site uses the HTML5 history api (via react router) to update the url as you 
 
 The site uses a design taking queues from Google's material design, complete with a FAB (floating action button) to add new spaces. The site is responsive and works and various screen sizes.
 
+I modified the data api very slightly to get it working with Webpack and also to fix a bug in id generation > 10.
+
 ####Running#####
 The code is bundled up using Webpack and a dev server is provided for previewing the site. Run the following to spin it up:
 

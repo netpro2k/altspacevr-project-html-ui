@@ -71,11 +71,12 @@
 				var biggestId = 0;
 				var store = db[that.modelName];
 				for (var key in store) {
+					key = Number(key);
 					if (!biggestId || key > biggestId) {
 						biggestId = key;
 					}
 				}
-				var newId = Number(biggestId) + 1;
+				var newId = biggestId + 1;
 				data.id = newId;
 				that.updateById(newId, data).then(function () {
 					fulfill(data);
