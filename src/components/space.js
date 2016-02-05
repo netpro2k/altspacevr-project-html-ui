@@ -7,7 +7,7 @@ export default class Space extends React.Component {
   render() {
     const {id, title, description, welcome, featured, created_by} = this.props
     return (
-      <Link to={`/spaces/${id}`} className='space-item' style={{backgroundImage: `url(https://placeimg.com/300/200/arch/${id})`}}>
+      <Link to={`/spaces/${id}`} className='space-item' style={{backgroundImage: `url(http://lorempixel.com/300/200/abstract/${id % 10})`}}>
         <UserAvatar active id={created_by} />
         <div className='body'>
           {description}
@@ -19,7 +19,7 @@ export default class Space extends React.Component {
             {this.props.private ? <div title='private space' className='private'/> : ''}
           </div>
         </div>
-        {this.props.featured ? <div title='featured space' className='featured'/> : ''}
+        {featured ? <div title='featured space' className='featured'/> : ''}
       </Link>
     )
   }
