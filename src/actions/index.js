@@ -1,4 +1,4 @@
-import {Space, User} from '../lib/Data.js'
+import {Space, User} from '../lib/data/Data.js'
 
 export const FETCH_SPACES = 'FETCH_SPACES'
 export const UPDATE_SPACE = 'UPDATE_SPACE'
