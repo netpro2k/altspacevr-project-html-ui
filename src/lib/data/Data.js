@@ -12,7 +12,7 @@
 		// Browser globals
 		factory((root.Data = {}));
 	}
-}(this, function (exports) {
+}(window, function (exports) {
 	var db;
 	var retrieveData = (function () {
 		var resolveData;
@@ -24,7 +24,7 @@
 			db = JSON.parse(this.responseText);
 			resolveData(db);
 		};
-		xhr.open('get', 'lib/data/db.json');
+		xhr.open('get', '/src/lib/data/db.json');
 		xhr.send();
 
 		return _retrieveData;
@@ -68,7 +68,7 @@
 		var that = this;
 		return new Promise(function (fulfill) {
 			retrieveData.then(function () {
-				var biggestId;
+				var biggestId = 0;
 				var store = db[that.modelName];
 				for (var key in store) {
 					if (!biggestId || key > biggestId) {
