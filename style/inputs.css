@@ -1,0 +1,66 @@
+input[type='text'], textarea {
+  color: #eee;
+  background: #23252b;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+}
+textarea {
+  height: 5em;
+}
+input[type='text']:focus, textarea:focus {
+  box-shadow: 0 0 3px 1px #2aa1d3;
+}
+input[type='checkbox'] {
+}
+
+input.error, textarea.error {
+  box-shadow: 0 0 3px 1px #ff5555 !important;
+}
+
+button, .button {
+  display: inline-block;
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  line-height: 15px;
+  height: 32px;
+  border: none;
+  color: #eee;
+  padding: 8px 10px;
+  font-size: 16px;
+  background-color: #2aa1d3;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 1px #2aa1d3;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+button.primary, .button.primary {
+  background-color: #8ab71b;
+  box-shadow: 0 0 2px 1px #8ab71b;
+}
+button.danger, .button.danger {
+  background-color: #ee4e10;
+  box-shadow: 0 0 2px 1px #ee4e10;
+}
+
+
+.floating-action-button {
+  width: 56px;
+  height: 56px;
+  background-color: #8ab71b;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: block;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  text-align: center;
+  line-height: 52px;
+  font-size: 24px;
+}
+.floating-action-button:active {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

@@ -1,0 +1,98 @@
+
+
+.spaces-container {
+  width: 100%;
+  margin-right: -10px;
+}
+
+.space-item {
+  display: block;
+  position: relative;
+  float: left;
+  background: black;
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: box-shadow 250ms;
+}
+
+.space-item:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.space-item:hover .body{
+  opacity: 1;
+}
+.space-item:hover .user-avatar{
+  opacity: 0;
+}
+
+.space-item .header {
+  align-items:flex-end;
+  padding: 6px 10px;
+  padding-right: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  background: #444953;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.space-item .featured {
+  width: 43px;
+  height: 41px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-image: url(/img/icon_featured.png);
+}
+
+.space-item .icons {
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+  text-align: right;
+  height: 24px;
+  font-size: 0;
+}
+
+.space-item .icons div {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.space-item .icons .private {
+  background-image: url(/img/icon_private.png);
+}
+
+.space-item .icons .welcome {
+  background-image: url(/img/icon_welcome.png);
+}
+
+.space-item .body {
+  padding: 5px 8px;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 250ms;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.space-item .user-avatar {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 250ms;
+  top: 5px;
+  left: 5px;
+}

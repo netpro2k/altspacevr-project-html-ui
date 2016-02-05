@@ -1,0 +1,58 @@
+
+@media screen and (min-width: 0) and (max-width: 639px) {
+  body {
+    padding: 20px 0;
+  }
+  .container {
+    min-width: 310px;
+  }
+  .space-item {
+    margin: auto;
+    margin-bottom: 20px;
+    float: none;
+    display: block
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group input, .form-group textarea, .form-group label {
+    width: 100%;
+    text-align: left;
+  }
+  .form-group label {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+  }
+  .form-group.horizontal {
+    display: block;
+  }
+  .form-group.horizontal label, .form-group.horizontal input {
+    display: inline-block;
+    width: auto;
+  }
+  .form-group.horizontal input {
+    margin-right: 10px;
+  }
+  .form-group.buttons button, .form-group.buttons .button, .form-group.buttons button.primary {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .form-group.buttons .left {
+    width: 100%;
+    order: 1;
+    margin-top: 30px
+  }
+  form .message {
+    left: 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container { width:610px}
+  .space-item:nth-child(2n){ margin-right: 0}
+}
+@media screen and (min-width: 960px) {
+  .container { width: 950px}
+  .space-item:nth-child(3n){ margin-right: 0}
+}

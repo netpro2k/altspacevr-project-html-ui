@@ -1,0 +1,17 @@
+.user-avatar img {
+  border-radius: 50%;
+  line-height: 32px;
+}
+
+.members, .members span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-avatar.inactive {
+  opacity: 0.2
+}
+
+.members .user-avatar {
+  cursor: pointer;
+}
